@@ -4,7 +4,7 @@
 
 
 - docker images
-  - ruby:2.7.2
+  - ruby:2.7.2 (nginx,supervisor)
   - mysql:5.7
 
 
@@ -26,7 +26,8 @@ sudo vim /etc/hosts
 - docker run
 
 ```
-cd dev_rails
+cd dev_rails/docker/dev
+cp .env.example .env
 docker-compose up -d
 ```
 

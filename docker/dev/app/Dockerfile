@@ -9,8 +9,8 @@ RUN apt-get update -y && \
     nodejs \
     vim \
     mariadb-client \
-	nginx \
-	supervisor \
+    nginx \
+    supervisor \
     default-mysql-client && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 

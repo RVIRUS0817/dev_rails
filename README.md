@@ -4,7 +4,7 @@
 
 
 - docker images
-  - ruby:2.7.2 (nginx,supervisor)
+  - ruby:2.7.2 (nginx,unicorn,supervisor)
   - mysql:5.7
 
 
@@ -34,7 +34,7 @@ docker-compose up -d
 - app deploy
 
 ```
-docker exec -it app bash
+docker exec -it app-rails bash
 
 bundle install
 rails db:migrate
@@ -44,3 +44,10 @@ rails db:migrate
 - Access
 
 http://dev.adachin.com/
+
+- DB login
+
+```
+docker exec -it app-rails bash
+mysql -u root -h mysql-5.7 -p
+```

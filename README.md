@@ -10,7 +10,7 @@
     - mysql:5.7
 
 
-- git clone
+- git clone or fork
 
 ```
 mkdir -p ~/git/github
@@ -51,5 +51,5 @@ http://dev.adachin.com/
 
 ```
 docker exec -it app-rails bash
-mysql -u root -h mysql-5.7 -p
+mysql -u root -h mysql-57 -p
 ```

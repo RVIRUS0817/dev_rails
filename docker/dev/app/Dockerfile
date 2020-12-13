@@ -1,5 +1,6 @@
 FROM ruby:2.7.2
 ENV APP_ROOT /var/www/app
+WORKDIR $APP_ROOT
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
@@ -8,20 +9,18 @@ RUN apt-get update -y && \
     libpq-dev \
     nodejs \
     vim \
-    mariadb-client \
     nginx \
     supervisor \
-    default-mysql-client && \
+    mariadb-client && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
-WORKDIR $APP_ROOT
 RUN gem install bundler 
 
 ## nginx
 RUN groupadd nginx
 RUN useradd -g nginx nginx
 ADD nginx/nginx.conf /etc/nginx/nginx.conf
-ADD nginx/dev.myapp.work.conf /etc/nginx/conf.d/dev.adachin.com.conf
+ADD nginx/dev.adachin.com.conf /etc/nginx/conf.d/dev.adachin.com.conf
 
 ## supervisor
 RUN mkdir -p /var/log/supervisor

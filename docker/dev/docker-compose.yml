@@ -18,7 +18,6 @@ services:
     environment:
       MYSQL_DATABASE: app
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_PASSWORD: password
       TZ: "Asia/Tokyo"
     volumes:
       - ./mysql/db_data:/var/lib/mysql

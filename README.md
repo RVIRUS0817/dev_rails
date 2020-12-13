@@ -4,8 +4,10 @@
 
 
 - docker images
-  - ruby:2.7.2 (nginx,unicorn,supervisor)
-  - mysql:5.7
+  - app-rails
+    - ruby:2.7.2 (nginx,unicorn,supervisor)
+  - mysql-57
+    - mysql:5.7
 
 
 - git clone

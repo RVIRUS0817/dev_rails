@@ -28,8 +28,9 @@ sudo vim /etc/hosts
 - docker run
 
 ```
-cd dev_rails/docker/dev
+cd dev_rails
 cp .env.example .env
+cd docker/dev
 docker-compose up -d
 ```
 

@@ -46,11 +46,14 @@ rails db:migrate
 
 - Access
 
+![スクリーンショット 2020-12-19 22 22 14](https://user-images.githubusercontent.com/5633085/102690442-cc717c00-4248-11eb-90ad-1c5ab5d5933f.jpg)
+
+
 http://dev.adachin.com/
 
 - DB login
 
 ```
 docker exec -it app-rails bash
-mysql -u root -h mysql-57 -p
+mysql -u root -h db -p
 ```

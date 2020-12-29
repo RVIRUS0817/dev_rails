@@ -39,6 +39,7 @@ docker-compose up -d
 ```
 docker exec -it app-rails bash
 
+yarn install
 bundle install
 rails db:migrate
 /usr/bin/supervisorctl restart app

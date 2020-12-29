@@ -57,3 +57,10 @@ http://dev.adachin.com/
 docker exec -it app-rails bash
 mysql -u root -h db -p
 ```
+
+## How to download Rails app
+
+```
+bundle exec rails new app
+```
+

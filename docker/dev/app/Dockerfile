@@ -21,8 +21,8 @@ RUN apt-get update -y && \
     vim \
     nginx \
     supervisor \
-	nodejs \
-	yarn \
+    nodejs \
+    yarn \
     mariadb-client && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 

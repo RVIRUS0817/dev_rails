@@ -32,7 +32,7 @@ public/assets
 /yarn-debug.log*
 /.yarn-integrity
 /public/uploads/*
-/vender/bundle
+/vendor/bundle
 /.env
 /.env.production
 /.env.development

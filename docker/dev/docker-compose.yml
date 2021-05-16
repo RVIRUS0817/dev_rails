@@ -1,9 +1,9 @@
 version: '2'
 services:
   app:
-    container_name: app-rails
+    container_name: rails-app
     build: ./app/
-    image: adachin-app
+    image: rails-app
     ports:
       - '80:80'
     volumes:
@@ -12,9 +12,9 @@ services:
     depends_on:
       - db
   db:
-    container_name: mysql
+    container_name: rails-db
     build: ./mysql/
-    image: adachin-db
+    image: rails-db
     ports:
       - '3308:3306'
     environment:

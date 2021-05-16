@@ -3,6 +3,7 @@ services:
   app:
     container_name: app-rails
     build: ./app/
+    image: app-rails
     ports:
       - '80:80'
     volumes:
@@ -13,6 +14,7 @@ services:
   db:
     container_name: mysql-57
     build: ./mysql/
+    image: mysql-db
     ports:
       - '3308:3306'
     environment:

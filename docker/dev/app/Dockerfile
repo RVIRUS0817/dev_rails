@@ -17,7 +17,6 @@ RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
-    nodejs \
     vim \
     nginx \
     supervisor \

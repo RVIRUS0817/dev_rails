@@ -37,7 +37,7 @@ docker-compose up -d
 - app deploy
 
 ```
-docker exec -it app-rails bash
+docker exec -it rails-app bash
 
 bundle install
 rails db:migrate
@@ -54,7 +54,7 @@ http://dev.adachin.com/
 - DB login
 
 ```
-docker exec -it app-rails bash
+docker exec -it rails-app bash
 mysql -u root -h db -p
 ```
 

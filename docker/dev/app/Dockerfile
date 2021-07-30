@@ -4,10 +4,6 @@ WORKDIR $APP_ROOT
 
 RUN mkdir -p /root/tmp
 
-# Setup UTC+9
-RUN cp -p /etc/localtime /etc/localtime.UTC \
-    && cp -p /usr/share/zoneinfo/Japan /etc/localtime
-
 RUN curl https://deb.nodesource.com/setup_12.x | bash
 RUN curl https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
@@ -21,9 +17,17 @@ RUN apt-get update -y && \
     nginx \
     supervisor \
     nodejs \
+    tzdate \
     yarn \
     mariadb-client && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+
+# setting locales
+RUN localedef -f UTF-8 -i en_US en_US.UTF-8
+
+# Setup UTC+9
+RUN cp -p /etc/localtime /etc/localtime.UTC \
+    && cp -p /usr/share/zoneinfo/Japan /etc/localtime
 
 RUN gem install bundler 
 

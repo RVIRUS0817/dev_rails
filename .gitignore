@@ -38,4 +38,5 @@ public/assets
 /.env.development
 
 /docker/dev/mysql/db_data
+/docker/dev/redis/db_data
 

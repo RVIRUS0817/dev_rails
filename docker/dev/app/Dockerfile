@@ -13,11 +13,12 @@ RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
+    locales \
     vim \
     nginx \
     supervisor \
     nodejs \
-    tzdate \
+    redis-tools \
     yarn \
     mariadb-client && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*

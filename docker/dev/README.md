@@ -8,6 +8,7 @@
     - ruby:2.7.2 (nginx,unicorn,supervisor)
   - mysql-57
     - mysql:5.7
+  - redis
 
 
 - git clone or fork
@@ -57,6 +58,14 @@ http://dev.adachin.com/
 docker exec -it rails-app bash
 mysql -u root -h db -p
 ```
+
+- redis login
+```
+docker exec -it rails-redis bash
+redis-cli -h redis
+
+```
+
 
 ## How to download Rails app
 

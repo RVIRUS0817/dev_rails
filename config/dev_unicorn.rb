@@ -4,7 +4,9 @@ worker_processes 2
 
 working_directory app_path
 
-listen  File.expand_path('/root/tmp/unicorn.sock', app_path)
+#listen  File.expand_path('/root/tmp/unicorn.sock', app_path)
+# only dev port
+listen "127.0.0.1:3000", :tcp_nopush => true
 
 pid File.expand_path('/root/tmp/unicorn.pid', app_path)
 

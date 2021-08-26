@@ -40,6 +40,7 @@ docker-compose up -d
 ```
 docker exec -it rails-app bash
 
+yarn install
 bundle install
 rails db:migrate
 /usr/bin/supervisorctl restart app
@@ -66,10 +67,17 @@ redis-cli -h redis
 
 ```
 
+## When want to use binding.pry 
+
+```
+docker exec -it rails-app bash
+supervisorctl stop app
+bundle exec rails s
+```
+
 
 ## How to download Rails app
 
 ```
 bundle exec rails new app
 ```
-

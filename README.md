@@ -67,6 +67,15 @@ redis-cli -h redis
 
 ```
 
+## When want to use binding.pry
+
+```
+docker exec -it rails-app bash
+supervisorctl stop app
+bundle exec rails s
+```
+
+
 ## How to download Rails app
 
 ```

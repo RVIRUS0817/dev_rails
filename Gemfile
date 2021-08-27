@@ -12,7 +12,6 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'dotenv-rails'
 gem 'mysql2'
-gem 'unicorn'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do

@@ -75,6 +75,13 @@ supervisorctl stop app
 bundle exec rails s
 ```
 
+- When undoing
+
+```
+Control + c
+supervisorctl start app
+```
+
 
 ## How to download Rails app
 

@@ -8,7 +8,7 @@
     - ruby:2.7.2 (nginx,puma,supervisor)
   - rails-db
     - mysql:8.0.27
-  - redis
+  - rails-redis
 
 
 - git clone or fork

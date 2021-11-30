@@ -4,9 +4,9 @@
 
 
 - docker images
-  - app-rails
+  - rails-app
     - ruby:2.7.2 (nginx,puma,supervisor)
-  - mysql-57
+  - rails-db
     - mysql:8.0.27
   - redis
 

@@ -15,7 +15,6 @@ RUN apt-get update -y && \
     libpq-dev \
     locales \
     vim \
-    supervisor \
     nodejs \
     redis-tools \
     yarn \

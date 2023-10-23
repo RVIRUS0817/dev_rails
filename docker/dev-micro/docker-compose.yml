@@ -11,6 +11,7 @@ services:
     ports:
       - '80:80'
     volumes:
+      - ~/git/github/dev_rails:/var/www/app:delegated
       - puma-sock:/var/run/puma
     tty: true
     depends_on:

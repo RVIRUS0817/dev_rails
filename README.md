@@ -75,16 +75,14 @@ supervisorctl stop app
 bundle exec rails s
 ```
 
-- When undoing
-
-```
-Control + c
-supervisorctl start app
-```
-
-
 ## How to download Rails app
 
 ```
 bundle exec rails new app
 ```
+
+---
+
+RUN docker/dev-micro
+
+https://github.com/RVIRUS0817/dev_rails/tree/master/docker/dev-micro
